@@ -10,7 +10,7 @@ class MainMap extends StatelessWidget{
       color: Colors.redAccent,
       child: Text('MC. Show Room',
       style: TextStyle(
-        color: Colors.white
+        color: Colors.white,fontFamily: 'InriaSans',
       ),),
     );
 
@@ -19,7 +19,7 @@ class MainMap extends StatelessWidget{
       color: Colors.orange,
       child: Text('LX Building Studies',
       style: TextStyle(
-        color: Colors.white
+        color: Colors.white, fontFamily: 'InriaSans',
       ),)
       ,
     );
@@ -29,7 +29,7 @@ class MainMap extends StatelessWidget{
       color: Colors.orange.shade300,
       child: Text('Escape Room',
       style: TextStyle(
-        color: Colors.white
+        color: Colors.white, fontFamily: 'InriaSans',
       ),)
       ,
     );
@@ -39,7 +39,7 @@ class MainMap extends StatelessWidget{
       color: Colors.brown.shade300,
       child: Text('ORO',
       style: TextStyle(
-        color: Colors.white
+        color: Colors.white, fontFamily: 'InriaSans',
       ),)
       ,
     );
@@ -49,7 +49,7 @@ class MainMap extends StatelessWidget{
       color: Colors.brown.shade500,
       child: Text('Entrepreneur Innovation Show Cart',
       style: TextStyle(
-        color: Colors.white
+        color: Colors.white, fontFamily: 'InriaSans',
       ),)
       ,
     );
@@ -57,9 +57,9 @@ class MainMap extends StatelessWidget{
     Widget venButton = RaisedButton(
       onPressed: () => {},
       color: Colors.blueAccent.shade700,
-      child: Text('Vending Machine',
+      child: Text('Vending Machine', 
       style: TextStyle(
-        color: Colors.white
+        color: Colors.white, fontFamily: 'InriaSans',
       ),)
       ,
     );
@@ -69,7 +69,7 @@ class MainMap extends StatelessWidget{
       color: Colors.greenAccent,
       child: Text('Exhibition Zone',
       style: TextStyle(
-        color: Colors.white
+        color: Colors.white, fontFamily: 'InriaSans',
       ),)
       ,
     );
@@ -79,7 +79,7 @@ class MainMap extends StatelessWidget{
       color: Colors.purpleAccent,
       child: Text('PopUp Exhibition',
       style: TextStyle(
-        color: Colors.white
+        color: Colors.white, fontFamily: 'InriaSans',
       ),)
       ,
     );
@@ -116,7 +116,8 @@ class MainMap extends StatelessWidget{
         appBar: AppBar(
           automaticallyImplyLeading: true,
           backgroundColor: Colors.orange.shade400,
-          title: Text('LX Map'),
+          title: Text('LX Map',
+          style: TextStyle(fontFamily: 'InriaSans')),
           leading: IconButton(icon: Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context, false),),
         ),

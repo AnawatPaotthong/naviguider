@@ -20,7 +20,6 @@ class Oro extends StatelessWidget {
             children: <Widget>[
               Image.asset('images/oro.jpg',
               fit: BoxFit.fill,),
-              
             ],
           ),
         ),

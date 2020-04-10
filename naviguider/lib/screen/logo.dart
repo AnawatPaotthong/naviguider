@@ -20,7 +20,7 @@ class Logo extends StatelessWidget {
         drawer: NavDrawer(),
         appBar: AppBar(
           backgroundColor: Colors.orange.shade400,
-          title: Text('NaviGuider'),
+          title: Text('NaviGuider',style: TextStyle(fontFamily: 'InriaSans', color: Colors.white)),
         ),
         body: Stack(
           fit: StackFit.expand,
@@ -75,22 +75,26 @@ class Logo extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.description),
-              title: Text('Design Concept'),
+              title: Text('Design Concept',
+                style: TextStyle(fontFamily: 'InriaSans', color: Colors.black, fontSize: 18)),
               onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => DesignConcept()))},
             ),
             ListTile(
               leading: Icon(Icons.map),
-              title: Text('Return To Map'),
+              title: Text('Return To Map',
+                style: TextStyle(fontFamily: 'InriaSans', color: Colors.black, fontSize: 18)),
               onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => MainMap()))},
             ),
             ListTile(
               leading: Icon(Icons.face),
-              title: Text('Credits'),
+              title: Text('Credits',
+                style: TextStyle(fontFamily: 'InriaSans', color: Colors.black, fontSize: 18)),
               onTap: () => {Navigator.of(context).pop()},
             ),
             ListTile(
               leading: Icon(Icons.insert_emoticon),
-              title: Text('FeedBack'),
+              title: Text('FeedBack',
+                style: TextStyle(fontFamily: 'InriaSans', color: Colors.black, fontSize: 18)),
               onTap: () => {Navigator.of(context).pop()},
             ),
           ],
