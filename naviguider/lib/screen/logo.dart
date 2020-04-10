@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
 import 'designConcept.dart';
+import 'buildingInformation.dart';
 
 class Logo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    
+    Widget button(){
+    return RaisedButton(
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => MainMap()))},
+      textColor: Colors.deepOrange,
+      child: Text('Press this to show map'),
+    );
+  }
+
     return MaterialApp(
       title: 'NaviGuider',
       home: Scaffold(
@@ -13,48 +23,40 @@ class Logo extends StatelessWidget {
           title: Text('NaviGuider'),
         ),
         body: Stack(
-            fit: StackFit.expand,
-            children: <Widget>[
-        Container(
-        decoration: BoxDecoration(
-            color: new Color(0xff622F74),
-        gradient: LinearGradient(
-          colors: [new Color(0xFFF57C00),new Color(0xFFFDD835) ],
-          begin: Alignment.centerRight,
-          end: Alignment.centerLeft,
-        ),
-      ),
-    ),
-    Column(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: <Widget>[
-    CircleAvatar(
-    backgroundColor: Colors.white,
-    radius: 125.0,
-    child: Image(
-    image:  AssetImage('assets/images/logo.png'),
-
-    ),
-    ),
-    Padding(
-    padding: EdgeInsets.only(top: 10.0),
-    ),
-            ],
-          ),
+          fit: StackFit.expand,
+          children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                color: new Color(0xff622F74),
+                gradient: LinearGradient(
+                  colors: [new Color(0xFFF57C00),
+                  new Color(0xFFFDD835)],
+                  begin: Alignment.centerRight,
+                  end: Alignment.centerLeft,
+                  )
+              ),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.white,
+                  radius: 125.0,
+                  child: Image.asset('images/logo.png'),
+                ),
+                Padding(padding: EdgeInsets.only(top:10.0),),
+                button()
+              ],
+            )
+          ],
         ),
       ),
     );
   }
-
-  Widget Button(){
-    return OutlineButton(
-      onPressed: () => {},
-      textColor: Colors.deepOrange,
-      child: Text('Press this to show map'),
-    );
-  }
-
 }
+
+
+
   class NavDrawer extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
@@ -79,7 +81,7 @@ class Logo extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.map),
               title: Text('Return To Map'),
-              onTap: () => {Navigator.of(context).pop()},
+              onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => MainMap()))},
             ),
             ListTile(
               leading: Icon(Icons.face),
