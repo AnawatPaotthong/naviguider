@@ -12,12 +12,33 @@ class Logo extends StatelessWidget {
           backgroundColor: Colors.orange.shade400,
           title: Text('NaviGuider'),
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+        body: Stack(
+            fit: StackFit.expand,
             children: <Widget>[
-              Image.asset('images/logo.png'),
-              Button()
+        Container(
+        decoration: BoxDecoration(
+            color: new Color(0xff622F74),
+        gradient: LinearGradient(
+          colors: [new Color(0xFFF57C00),new Color(0xFFFDD835) ],
+          begin: Alignment.centerRight,
+          end: Alignment.centerLeft,
+        ),
+      ),
+    ),
+    Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: <Widget>[
+    CircleAvatar(
+    backgroundColor: Colors.white,
+    radius: 125.0,
+    child: Image(
+    image:  AssetImage('assets/images/logo.png'),
+
+    ),
+    ),
+    Padding(
+    padding: EdgeInsets.only(top: 10.0),
+    ),
             ],
           ),
         ),
