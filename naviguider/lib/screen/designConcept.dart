@@ -4,6 +4,26 @@ import 'package:flutter/material.dart';
 class DesignConcept extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Widget title = Container(
+      margin: const EdgeInsets.all(5),
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: Colors.blue,
+        ),
+        borderRadius: BorderRadius.circular(10),
+      ),
+      padding: const EdgeInsets.all(10),
+      child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque, mauris vitae vulputate porttitor, urna est rutrum dolor,'
+      'non ultricies risus est tempus justo. Aenean vel odio sit amet magna egestas pretium. Suspendisse quis turpis euismod, laoreet tortor eget,'
+      'maximus purus. Aliquam euismod egestas efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer aliquet',
+      textAlign: TextAlign.justify,
+      style: TextStyle(
+        fontFamily: 'InriaSans',
+        color: Colors.red,
+        fontWeight: FontWeight.bold
+      ),),
+    );
+
     return MaterialApp(
       title: 'Design Concept',
       home: Scaffold(
@@ -16,16 +36,14 @@ class DesignConcept extends StatelessWidget {
         ),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image.asset('images/LXBuilding.jpg'),
-              Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus et purus et tincidunt. Vestibulum maximus lacus ut ante faucibus, non tempor justo elementum. Maecenas sodales ante nec sem luctus, sed iaculis lectus vestibulum. Praesent nisl dui, elementum a placerat sed, aliquam finibus metus. Aenean sollicitudin velit lacinia magna efficitur luctus. Donec at neque metus. Sed pulvinar sapien id facilisis sagittis. Nullam sed hendrerit nisl. Nam diam augue, finibus id feugiat ut, fermentum eget est. Ut in rutrum magna. Vivamus id ipsum vestibulum, sodales lacus vel, dignissim justo. Vivamus suscipit dolor eget interdum consectetur. Morbi eget tincidunt massa, quis tempor elit. Quisque scelerisque neque dui, ut tempor orci fermentum imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. In id ornare ligula.'),
+              Image.asset('images/LXBuilding.jpg',
+              fit: BoxFit.fill,),
+              title
             ],
           ),
         ),
       ),
     );
-
   }
-
 }
