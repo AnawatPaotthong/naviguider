@@ -102,6 +102,16 @@ class MainMap extends StatelessWidget{
       ,
     );
 
+    Widget tryIt = RaisedButton(
+      child: Text('Press it'),
+      onPressed: () {
+        Scaffold.of(context).showSnackBar(SnackBar(
+          content: Text('Hello!'),
+          duration: Duration(seconds: 3),)
+          );
+      },
+    );
+
   Widget listOfButton = (
     Table(
       defaultColumnWidth: FlexColumnWidth(1.0),
@@ -147,6 +157,7 @@ class MainMap extends StatelessWidget{
               height: 240,
               width: 600,
               fit: BoxFit.cover,),
+              tryIt,
               listOfButton
             ],
           ),
