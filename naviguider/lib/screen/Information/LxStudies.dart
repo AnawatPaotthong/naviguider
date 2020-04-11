@@ -10,7 +10,7 @@ class LxStudies extends StatelessWidget {
       width: 350,
       child: Carousel(
         images: [
-          NetworkImage('https://cdn.shopify.com/s/files/1/0506/3177/products/seaga-infinity-INF5C-left_600x.jpg?v=1487368702'),
+          NetworkImage('https://lh3.googleusercontent.com/proxy/NcYyqWaUhx3MgQhAVHVxnJyM8dHOh0wSK9ANjdcM1W9lPmJti2zzG1ijZaG3YI-GAH33msplwXnoOjnqgsYLmtngI1TKQmngTSHSjHlUyVZH2qh8jjJPH0lHajOaxME'),
           NetworkImage('https://www.amequipmentsales.com/wp-content/uploads/2019/07/side.jpg')
         ],
         dotSize: 4.0,
