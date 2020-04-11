@@ -11,10 +11,16 @@ import 'exhibitionZone/RightTopMap.dart';
 
 class MainMap extends StatelessWidget{
   @override
+  Color oroColor = const Color.fromRGBO(204,90,1,1.0);
   Widget build(BuildContext context) {
 
+<<<<<<< HEAD
     Widget mcButton = RaisedButton(
       onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => McRoom()))},
+=======
+  Widget mcButton = RaisedButton(
+      onPressed: () => {},
+>>>>>>> 1890fe9c212660492659e7b22a0ca74d8227a07b
       color: Colors.redAccent,
       child: Text('MC. Show Room',
       style: TextStyle(
@@ -44,7 +50,7 @@ class MainMap extends StatelessWidget{
 
   Widget oroButton = RaisedButton(
       onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Oro()))},
-      color: Colors.brown.shade300,
+      color: oroColor,
       child: Text('ORO',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
