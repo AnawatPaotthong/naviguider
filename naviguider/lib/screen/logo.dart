@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'designConcept.dart';
-import 'buildingInformation.dart';
+import 'Map.dart';
 
 class Logo extends StatelessWidget {
   @override
