@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:naviguider/screen/Information/EntreShowCart.dart';
+import 'package:naviguider/screen/Information/EscapeRoom.dart';
+import 'package:naviguider/screen/Information/LxStudies.dart';
+import 'package:naviguider/screen/Information/McShowRoom.dart';
+import 'package:naviguider/screen/Information/PopUp.dart';
 import 'package:naviguider/screen/Information/vendingMac.dart';
 import 'Information/oro.dart';
 import 'exhibitionZone/RightTopMap.dart';
@@ -9,7 +14,7 @@ class MainMap extends StatelessWidget{
   Widget build(BuildContext context) {
 
     Widget mcButton = RaisedButton(
-      onPressed: () => {},
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => McRoom()))},
       color: Colors.redAccent,
       child: Text('MC. Show Room',
       style: TextStyle(
@@ -18,7 +23,7 @@ class MainMap extends StatelessWidget{
     );
 
   Widget lxButton = RaisedButton(
-      onPressed: () => {},
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => LxStudies()))},
       color: Colors.orange,
       child: Text('LX Building Studies',
       style: TextStyle(
@@ -28,7 +33,7 @@ class MainMap extends StatelessWidget{
     );
 
   Widget escapeButton = RaisedButton(
-      onPressed: () => {},
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => EscapeRoom()))},
       color: Colors.orange.shade300,
       child: Text('Escape Room',
       style: TextStyle(
@@ -48,7 +53,7 @@ class MainMap extends StatelessWidget{
     );
 
     Widget entButton = RaisedButton(
-      onPressed: () => {},
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => EntreShowCart()))},
       color: Colors.brown.shade500,
       child: Text('Entrepreneur Innovation Show Cart',
       style: TextStyle(
@@ -78,7 +83,7 @@ class MainMap extends StatelessWidget{
     );
 
     Widget popupButton = RaisedButton(
-      onPressed: () => {},
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Popup()))},
       color: Colors.purpleAccent,
       child: Text('PopUp Exhibition',
       style: TextStyle(

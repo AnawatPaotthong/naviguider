@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:naviguider/screen/Information/vendingMac.dart';
 import 'Information/oro.dart';
-import 'exhibitionZone/RightTopMap.dart';
+// import 'exhibitionZone/RightTopMap.dart';
 
 class MainMap extends StatelessWidget{
   @override

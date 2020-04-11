@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
-class VendingMac extends StatelessWidget {
+class Popup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     
@@ -23,12 +23,12 @@ class VendingMac extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'vendingMachine',
+      title: 'PopUpExhibition',
       home: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: true,
           backgroundColor: Colors.orange.shade400,
-          title: Text('Vending Machine'),
+          title: Text('PopUp Exhibition'),
           leading: IconButton(icon: Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context, false),),
         ),
