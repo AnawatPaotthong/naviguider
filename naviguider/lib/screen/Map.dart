@@ -23,15 +23,9 @@ class MainMap extends StatelessWidget{
 
   Widget build(BuildContext context) {
 
-<<<<<<< HEAD
-    Widget mcButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => McRoom()))},
-      color: Colors.redAccent,
-=======
   Widget mcButton = RaisedButton(
       onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => McRoom()))},
       color: mcColor,
->>>>>>> 47d78fae8b818bd23cfc9d020330aacabf6e266e
       child: Text('MC. Show Room',
       style: TextStyle(
         color: Colors.white,fontFamily: 'InriaSans',
