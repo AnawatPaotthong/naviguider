@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:naviguider/screen/Information/vendingMac.dart';
 import 'Information/oro.dart';
 import 'exhibitionZone/RightTopMap.dart';
 
@@ -57,7 +58,7 @@ class MainMap extends StatelessWidget{
     );
 
     Widget venButton = RaisedButton(
-      onPressed: () => {},
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => VendingMac()))},
       color: Colors.blueAccent.shade700,
       child: Text('Vending Machine', 
       style: TextStyle(

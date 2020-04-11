@@ -6,7 +6,7 @@ class VendingMac extends StatelessWidget {
   Widget build(BuildContext context) {
     
     Widget imageCarousel = SizedBox(
-      height: 200,
+      height: 500,
       width: 350,
       child: Carousel(
         images: [
@@ -17,7 +17,7 @@ class VendingMac extends StatelessWidget {
         dotSpacing: 15.0,
         dotColor: Colors.lightGreenAccent,
         indicatorBgPadding: 5.0,
-        dotBgColor: Colors.purple.withOpacity(0.5),
+        dotBgColor: Colors.orange.withOpacity(0.5),
         borderRadius: true,
       ),
     );
@@ -35,8 +35,6 @@ class VendingMac extends StatelessWidget {
         body: Center(
           child: Column(
             children: <Widget>[
-              Image.asset('images/oro.jpg',
-              fit: BoxFit.fill,),
               imageCarousel
             ],
           ),
