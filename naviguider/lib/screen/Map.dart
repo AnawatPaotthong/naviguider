@@ -9,6 +9,7 @@ import 'package:naviguider/screen/Information/McShowRoom.dart';
 import 'package:naviguider/screen/Information/PopUp.dart';
 
 
+
 class MainMap extends StatelessWidget{
   @override
   Color oroColor = const Color.fromRGBO(204, 90, 1, 1.0);
@@ -33,7 +34,7 @@ class MainMap extends StatelessWidget{
     );
 
   Widget lxButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Oro()))},
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => LxStudies()))},
       color: lxColor,
       child: Text('LX Building Studies',
       style: TextStyle(
@@ -93,7 +94,7 @@ class MainMap extends StatelessWidget{
     );
 
     Widget popupButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Oro()))},
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Popup()))},
       color: popUpColor,
       child: Text('PopUp Exhibition',
       style: TextStyle(
@@ -102,15 +103,6 @@ class MainMap extends StatelessWidget{
       ,
     );
 
-    Widget tryIt = RaisedButton(
-      child: Text('Press it'),
-      onPressed: () {
-        Scaffold.of(context).showSnackBar(SnackBar(
-          content: Text('Hello!'),
-          duration: Duration(seconds: 3),)
-          );
-      },
-    );
 
   Widget listOfButton = (
     Table(
@@ -155,10 +147,10 @@ class MainMap extends StatelessWidget{
             children: <Widget>[
               Image.asset('images/map_with_marker1.JPG',
               height: 240,
-              width: 600,
-              fit: BoxFit.cover,),
-              tryIt,
-              listOfButton
+              width: 800,
+              fit: BoxFit.fitWidth,),
+              listOfButton,
+              
             ],
           ),
         ),
@@ -166,3 +158,5 @@ class MainMap extends StatelessWidget{
     );
   }
 }
+
+  
