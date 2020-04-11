@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class RightTopMap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
+    Color mapColor = const Color.fromRGBO(104, 139, 47, 1.0);
      Widget selfPracticeButton = RaisedButton(
       onPressed: () => {},
-      color: Colors.green,
+      color: mapColor,
       child: Text('Self Practice Learning',
       style: TextStyle(
         color: Colors.white,fontFamily: 'InriaSans',
@@ -15,7 +15,7 @@ class RightTopMap extends StatelessWidget {
 
   Widget activeExButton = RaisedButton(
       onPressed: () => {},
-      color: Colors.green,
+      color: mapColor,
       child: Text('Active Exhibition',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -25,7 +25,7 @@ class RightTopMap extends StatelessWidget {
 
   Widget designStudioButton = RaisedButton(
       onPressed: () => {},
-      color: Colors.green,
+      color: mapColor,
       child: Text('Design Studio',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -35,7 +35,7 @@ class RightTopMap extends StatelessWidget {
 
   Widget selfSnackButton = RaisedButton(
       onPressed: () => {},
-      color: Colors.green,
+      color: mapColor,
       child: Text('Self Snacks',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -45,7 +45,7 @@ class RightTopMap extends StatelessWidget {
 
     Widget handsOnButton = RaisedButton(
       onPressed: () => {},
-      color: Colors.green,
+      color: mapColor,
       child: Text('Hands On / Workshop',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -55,7 +55,7 @@ class RightTopMap extends StatelessWidget {
 
     Widget vrARMRButton = RaisedButton(
       onPressed: () => {},
-      color: Colors.green,
+      color: mapColor,
       child: Text('VR AR MR', 
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -65,7 +65,7 @@ class RightTopMap extends StatelessWidget {
 
     Widget mediatButton = RaisedButton(
       onPressed: () => {},
-      color: Colors.green,
+      color: mapColor,
       child: Text('Media Studio',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -75,7 +75,7 @@ class RightTopMap extends StatelessWidget {
 
     Widget knowAndShareButton = RaisedButton(
       onPressed: () => {},
-      color: Colors.green,
+      color: mapColor,
       child: Text('Know And Share',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -85,7 +85,7 @@ class RightTopMap extends StatelessWidget {
 
     Widget selfStorageButton = RaisedButton(
       onPressed: () => {},
-      color: Colors.green,
+      color: mapColor,
       child: Text('Self Storage',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -95,7 +95,7 @@ class RightTopMap extends StatelessWidget {
 
     Widget digitalBasedButton = RaisedButton(
       onPressed: () => {},
-      color: Colors.green,
+      color: mapColor,
       child: Text('Digital Based Exhibition',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
