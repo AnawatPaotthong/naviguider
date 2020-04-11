@@ -129,7 +129,7 @@ class MainMap extends StatelessWidget{
           margin: const EdgeInsets.all(15),
           child: Column(
             children: <Widget>[
-              Image.asset('images/Map1.JPG',
+              Image.asset('images/map_with_marker1.JPG',
               height: 240,
               width: 600,
               fit: BoxFit.cover,),

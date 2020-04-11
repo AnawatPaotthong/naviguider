@@ -33,6 +33,8 @@ flutter:
     - images/Map1.JPG
     - images/oro.jpg
     - images/map3.JPG
+    - images/map_with_marker1.JPG
+    - images/map_with_marker2.JPG
   fonts:
     - family: InriaSans
       fonts:
