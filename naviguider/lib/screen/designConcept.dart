@@ -25,7 +25,7 @@ class DesignConcept extends StatelessWidget {
         appBar: AppBar(
           automaticallyImplyLeading: true,
           backgroundColor: Colors.orange.shade400,
-          title: Text('Design Concept',style: TextStyle(fontFamily: 'InriaSans', color: Colors.black, fontSize: 18)),
+          title: Text('Design Concept',style: TextStyle(fontFamily: 'InriaSans', color: Colors.white, fontSize: 18)),
           leading: IconButton(icon: Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context, false),),
         ),
