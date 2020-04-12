@@ -33,7 +33,7 @@ class MainMap extends StatelessWidget{
     );
 
   Widget lxButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Oro()))},
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => LxStudies()))},
       color: lxColor,
       child: Text('LX Building Studies',
       style: TextStyle(
