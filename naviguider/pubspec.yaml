@@ -39,8 +39,7 @@ flutter:
     - images/ProjectorRoom.jpg
     - images/LearningSpace1.jpg
     - images/LearningSpace2.jpg
-    - images/leariningSpace3.jpg
-    - images/Locker1.jpg
+    - images/learningSpace3.jpg
     - images/Locker2.jpg
 
   fonts:
