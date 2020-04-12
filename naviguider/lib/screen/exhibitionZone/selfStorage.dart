@@ -12,7 +12,7 @@ class SelfStorage extends StatelessWidget {
         images: [
           Image.asset('images/Loker1.jpg'),
           Image.asset('images/Locker.jpg'),
-          Image.asset('images/Locker2.jpg')
+          Image.asset('images/locker2.jpg')
         ],
         dotSize: 4.0,
         dotSpacing: 15.0,
