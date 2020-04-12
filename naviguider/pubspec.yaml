@@ -45,6 +45,9 @@ flutter:
     - images/BehideOro.jpg
     - images/Loker1.jpg
     - images/Locker.jpg
+    - images/paint.jpg
+    - images/tae.jpg
+    - images/poom.jpg
 
   fonts:
     - family: InriaSans
