@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:naviguider/screen/credits.dart';
+import 'package:naviguider/screen/feedback.dart';
 import 'designConcept.dart';
 import 'Map.dart';
 
@@ -96,7 +97,7 @@ class Logo extends StatelessWidget {
               leading: Icon(Icons.insert_emoticon),
               title: Text('FeedBack',
                 style: TextStyle(fontFamily: 'InriaSans', color: Colors.black, fontSize: 18)),
-              onTap: () => {Navigator.of(context).pop()},
+              onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => FeedBack()))},
             ),
           ],
         ),
