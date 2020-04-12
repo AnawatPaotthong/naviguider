@@ -6,12 +6,12 @@ class Popup extends StatelessWidget {
   Widget build(BuildContext context) {
     
     Widget imageCarousel = SizedBox(
-      height: 300,
+      height: 500,
       width: 350,
       child: Carousel(
         images: [
-          NetworkImage('https://www.linkingmakerandmarket.com/wp-content/uploads/2016/02/Linking-Maker-and-Market-Popup-exhibition-ecostyle-2015-1-1100x488.jpg'),
-          NetworkImage('https://i.pinimg.com/originals/20/b6/d1/20b6d142e9eb4cd48fb8320384ce9f38.jpg')
+          NetworkImage('https://cdn.shopify.com/s/files/1/0506/3177/products/seaga-infinity-INF5C-left_600x.jpg?v=1487368702'),
+          NetworkImage('https://www.amequipmentsales.com/wp-content/uploads/2019/07/side.jpg')
         ],
         dotSize: 4.0,
         dotSpacing: 15.0,
@@ -20,20 +20,6 @@ class Popup extends StatelessWidget {
         dotBgColor: Colors.orange.withOpacity(0.5),
         borderRadius: true,
       ),
-    );
-
-    Widget title = Container(
-      margin: const EdgeInsets.all(5),
-      padding: const EdgeInsets.all(10),
-      child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque, mauris vitae vulputate porttitor, urna est rutrum dolor,'
-      'non ultricies risus est tempus justo. Aenean vel odio sit amet magna egestas pretium. Suspendisse quis turpis euismod, laoreet tortor eget,'
-      'maximus purus. Aliquam euismod egestas efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer aliquet',
-      textAlign: TextAlign.justify,
-      style: TextStyle(
-        fontFamily: 'InriaSans',
-        color: Colors.red,
-        fontWeight: FontWeight.bold
-      ),),
     );
 
     return MaterialApp(
@@ -49,8 +35,7 @@ class Popup extends StatelessWidget {
         body: Center(
           child: Column(
             children: <Widget>[
-              imageCarousel,
-              title
+              imageCarousel
             ],
           ),
         ),

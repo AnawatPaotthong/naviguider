@@ -15,7 +15,6 @@ dependencies:
   flutter:
     sdk: flutter
   carousel_pro: ^1.0.0
-  
 
   cupertino_icons: ^0.1.0
 
@@ -36,14 +35,7 @@ flutter:
     - images/map3.JPG
     - images/map_with_marker1.JPG
     - images/map_with_marker2.JPG
-<<<<<<< HEAD
     - images/LearningSpace1.jpg
-=======
-    - images/ProjectorRoom.jpg
-    - images/LearningSpace1.jpg
-    - images/LearningSpace2.jpg
-    - images/oroPic.png
->>>>>>> 432ef706551b5a2e3fc835a4926ed183f1f805ec
   fonts:
     - family: InriaSans
       fonts:

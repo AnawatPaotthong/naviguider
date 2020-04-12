@@ -4,9 +4,15 @@ import 'package:flutter/material.dart';
 class DesignConcept extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
+    
     Widget title = Container(
       margin: const EdgeInsets.all(5),
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: Colors.blue,
+        ),
+        borderRadius: BorderRadius.circular(10),
+      ),
       padding: const EdgeInsets.all(10),
       child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque, mauris vitae vulputate porttitor, urna est rutrum dolor,'
       'non ultricies risus est tempus justo. Aenean vel odio sit amet magna egestas pretium. Suspendisse quis turpis euismod, laoreet tortor eget,'
@@ -25,7 +31,7 @@ class DesignConcept extends StatelessWidget {
         appBar: AppBar(
           automaticallyImplyLeading: true,
           backgroundColor: Colors.orange.shade400,
-          title: Text('Design Concept', style: TextStyle(fontFamily: 'InriaSans', color: Colors.white, fontSize: 18)),
+          title: Text('Design Concept',style: TextStyle(fontFamily: 'InriaSans', color: Colors.black, fontSize: 18)),
           leading: IconButton(icon: Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context, false),),
         ),
@@ -33,8 +39,7 @@ class DesignConcept extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Image.asset('images/LXBuilding.jpg',
-              width: 400,
-              height: 200,),
+              fit: BoxFit.fill,),
               title
             ],
           ),

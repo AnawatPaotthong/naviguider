@@ -6,13 +6,12 @@ class McRoom extends StatelessWidget {
   Widget build(BuildContext context) {
     
     Widget imageCarousel = SizedBox(
-      height: 300,
-      width: 250,
+      height: 500,
+      width: 350,
       child: Carousel(
         images: [
-          NetworkImage('https://www.beat.com.au/wp-content/uploads/2020/01/The-MC-Showroom-min.jpg'),
-          NetworkImage('https://s3-media0.fl.yelpcdn.com/bphoto/zNlvsUIpVawQ5w0rNOnPxA/o.jpg'),
-          NetworkImage('https://lh3.googleusercontent.com/proxy/wotN4lmCcC0-Rq48kLgEABGXfwmlDocha51KJ7V3kedHBeoPpNIAq-oMPasee6kSa6_i4pXe7eluGGVZ_9kjNQnCvyMuS_Bqf_UaAeQvDXjurxVT-0hC9_-svIqFoepoSYFf8g')
+          NetworkImage('https://cdn.shopify.com/s/files/1/0506/3177/products/seaga-infinity-INF5C-left_600x.jpg?v=1487368702'),
+          NetworkImage('https://www.amequipmentsales.com/wp-content/uploads/2019/07/side.jpg')
         ],
         dotSize: 4.0,
         dotSpacing: 15.0,
@@ -21,20 +20,6 @@ class McRoom extends StatelessWidget {
         dotBgColor: Colors.orange.withOpacity(0.5),
         borderRadius: true,
       ),
-    );
-
-    Widget title = Container(
-      margin: const EdgeInsets.all(5),
-      padding: const EdgeInsets.all(10),
-      child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque, mauris vitae vulputate porttitor, urna est rutrum dolor,'
-      'non ultricies risus est tempus justo. Aenean vel odio sit amet magna egestas pretium. Suspendisse quis turpis euismod, laoreet tortor eget,'
-      'maximus purus. Aliquam euismod egestas efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer aliquet',
-      textAlign: TextAlign.justify,
-      style: TextStyle(
-        fontFamily: 'InriaSans',
-        color: Colors.red,
-        fontWeight: FontWeight.bold
-      ),),
     );
 
     return MaterialApp(
@@ -50,8 +35,7 @@ class McRoom extends StatelessWidget {
         body: Center(
           child: Column(
             children: <Widget>[
-              imageCarousel,
-              title
+              imageCarousel
             ],
           ),
         ),

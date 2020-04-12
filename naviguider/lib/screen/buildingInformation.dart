@@ -1,31 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:naviguider/screen/Information/vendingMac.dart';
 import 'Information/oro.dart';
-import 'exhibitionZone/RightTopMap.dart';
-import 'package:naviguider/screen/Information/EntreShowCart.dart';
-import 'package:naviguider/screen/Information/EscapeRoom.dart';
-import 'package:naviguider/screen/Information/LxStudies.dart';
-import 'package:naviguider/screen/Information/McShowRoom.dart';
-import 'package:naviguider/screen/Information/PopUp.dart';
-
+// import 'exhibitionZone/RightTopMap.dart';
 
 class MainMap extends StatelessWidget{
   @override
-  Color oroColor = const Color.fromRGBO(204, 90, 1, 1.0);
-  Color entColor = const Color.fromRGBO(90, 38, 40, 1.0);
-  Color escapeColor = const Color.fromRGBO(240, 136, 47, 1.0);
-  Color lxColor = const Color.fromRGBO(241, 83, 44, 1.0);
-  Color mcColor = const Color.fromRGBO(244, 2, 52, 1.0);
-  Color vendColor = const Color.fromRGBO(2, 63, 117, 1.0);
-  Color exhibitionColor = const Color.fromRGBO(104, 139, 47, 1.0);
-  Color popUpColor = const Color.fromRGBO(116, 82, 152, 1.0);
-  Color researchColor = const Color.fromRGBO(255, 255, 255, 1.0);
-
   Widget build(BuildContext context) {
 
-  Widget mcButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => McRoom()))},
-      color: mcColor,
+    Widget mcButton = RaisedButton(
+      onPressed: () => {},
+      color: Colors.redAccent,
       child: Text('MC. Show Room',
       style: TextStyle(
         color: Colors.white,fontFamily: 'InriaSans',
@@ -33,8 +17,8 @@ class MainMap extends StatelessWidget{
     );
 
   Widget lxButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Oro()))},
-      color: lxColor,
+      onPressed: () => {},
+      color: Colors.orange,
       child: Text('LX Building Studies',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -43,8 +27,8 @@ class MainMap extends StatelessWidget{
     );
 
   Widget escapeButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => EscapeRoom()))},
-      color: escapeColor,
+      onPressed: () => {},
+      color: Colors.orange.shade300,
       child: Text('Escape Room',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -54,7 +38,7 @@ class MainMap extends StatelessWidget{
 
   Widget oroButton = RaisedButton(
       onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Oro()))},
-      color: oroColor,
+      color: Colors.brown.shade300,
       child: Text('ORO',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -63,8 +47,8 @@ class MainMap extends StatelessWidget{
     );
 
     Widget entButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => EntreShowCart()))},
-      color: entColor,
+      onPressed: () => {},
+      color: Colors.brown.shade500,
       child: Text('Entrepreneur Innovation Show Cart',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -74,7 +58,7 @@ class MainMap extends StatelessWidget{
 
     Widget venButton = RaisedButton(
       onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => VendingMac()))},
-      color: vendColor,
+      color: Colors.blueAccent.shade700,
       child: Text('Vending Machine', 
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -83,8 +67,8 @@ class MainMap extends StatelessWidget{
     );
 
     Widget exhibitButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => RightTopMap()))},
-      color: exhibitionColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => VendingMac()))},
+      color: Colors.greenAccent,
       child: Text('Exhibition Zone',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -93,23 +77,13 @@ class MainMap extends StatelessWidget{
     );
 
     Widget popupButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Oro()))},
-      color: popUpColor,
+      onPressed: () => {},
+      color: Colors.purpleAccent,
       child: Text('PopUp Exhibition',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
       ),)
       ,
-    );
-
-    Widget tryIt = RaisedButton(
-      child: Text('Press it'),
-      onPressed: () {
-        Scaffold.of(context).showSnackBar(SnackBar(
-          content: Text('Hello!'),
-          duration: Duration(seconds: 3),)
-          );
-      },
     );
 
   Widget listOfButton = (
@@ -153,11 +127,10 @@ class MainMap extends StatelessWidget{
           margin: const EdgeInsets.all(15),
           child: Column(
             children: <Widget>[
-              Image.asset('images/map_with_marker1.JPG',
+              Image.asset('images/Map1.JPG',
               height: 240,
               width: 600,
               fit: BoxFit.cover,),
-              tryIt,
               listOfButton
             ],
           ),
