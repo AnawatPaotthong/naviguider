@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:naviguider/screen/exhibitionZone/activeEx.dart';
+import 'package:naviguider/screen/exhibitionZone/designStudio.dart';
+import 'package:naviguider/screen/exhibitionZone/digitalBased.dart';
+import 'package:naviguider/screen/exhibitionZone/handsOn.dart';
+import 'package:naviguider/screen/exhibitionZone/knowAndShare.dart';
+import 'package:naviguider/screen/exhibitionZone/mediaStudio.dart';
+import 'package:naviguider/screen/exhibitionZone/selfPrac.dart';
+import 'package:naviguider/screen/exhibitionZone/selfSnack.dart';
+import 'package:naviguider/screen/exhibitionZone/selfStorage.dart';
+import 'package:naviguider/screen/exhibitionZone/vrARMR.dart';
 
 class RightTopMap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Color mapColor = const Color.fromRGBO(104, 139, 47, 1.0);
      Widget selfPracticeButton = RaisedButton(
-      onPressed: () => {},
-      color: mapColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => SelfPracticeLearning()))},
+      color: Colors.green,
       child: Text('Self Practice Learning',
       style: TextStyle(
         color: Colors.white,fontFamily: 'InriaSans',
@@ -14,8 +24,8 @@ class RightTopMap extends StatelessWidget {
     );
 
   Widget activeExButton = RaisedButton(
-      onPressed: () => {},
-      color: mapColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => ActiveEx()))},
+      color: Colors.green.shade900,
       child: Text('Active Exhibition',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -24,8 +34,8 @@ class RightTopMap extends StatelessWidget {
     );
 
   Widget designStudioButton = RaisedButton(
-      onPressed: () => {},
-      color: mapColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => DesignStudio()))},
+      color: Colors.green.shade600,
       child: Text('Design Studio',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -34,8 +44,8 @@ class RightTopMap extends StatelessWidget {
     );
 
   Widget selfSnackButton = RaisedButton(
-      onPressed: () => {},
-      color: mapColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => SelfSnack()))},
+      color: Colors.green.shade600,
       child: Text('Self Snacks',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -44,8 +54,8 @@ class RightTopMap extends StatelessWidget {
     );
 
     Widget handsOnButton = RaisedButton(
-      onPressed: () => {},
-      color: mapColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => HandsOnWorkShop()))},
+      color: Colors.green.shade800,
       child: Text('Hands On / Workshop',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -54,8 +64,8 @@ class RightTopMap extends StatelessWidget {
     );
 
     Widget vrARMRButton = RaisedButton(
-      onPressed: () => {},
-      color: mapColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => VrArMr()))},
+      color: Colors.green.shade700,
       child: Text('VR AR MR', 
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -64,8 +74,8 @@ class RightTopMap extends StatelessWidget {
     );
 
     Widget mediatButton = RaisedButton(
-      onPressed: () => {},
-      color: mapColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => MediaStudio()))},
+      color: Colors.green.shade700,
       child: Text('Media Studio',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -74,8 +84,8 @@ class RightTopMap extends StatelessWidget {
     );
 
     Widget knowAndShareButton = RaisedButton(
-      onPressed: () => {},
-      color: mapColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => KnowAndShare()))},
+      color: Colors.green.shade800,
       child: Text('Know And Share',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -84,8 +94,8 @@ class RightTopMap extends StatelessWidget {
     );
 
     Widget selfStorageButton = RaisedButton(
-      onPressed: () => {},
-      color: mapColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => SelfStorage()))},
+      color: Colors.green,
       child: Text('Self Storage',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -94,8 +104,8 @@ class RightTopMap extends StatelessWidget {
     );
 
     Widget digitalBasedButton = RaisedButton(
-      onPressed: () => {},
-      color: mapColor,
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => DigitalBasedEx()))},
+      color: Colors.green.shade900,
       child: Text('Digital Based Exhibition',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
@@ -105,8 +115,8 @@ class RightTopMap extends StatelessWidget {
 
     Widget listOfButton = (
     Table(
-      defaultColumnWidth: FlexColumnWidth(1.0),
-      columnWidths: {0: FractionColumnWidth(.5), 1: FractionColumnWidth(.5)},
+      defaultColumnWidth: FlexColumnWidth(.5),
+      columnWidths: {0: FractionColumnWidth(.45), 1: FractionColumnWidth(.5)},
       defaultVerticalAlignment: TableCellVerticalAlignment.middle,
       children: [
         TableRow(children: [

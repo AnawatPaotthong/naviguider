@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:naviguider/screen/credits.dart';
 import 'designConcept.dart';
 import 'Map.dart';
 
@@ -89,7 +90,7 @@ class Logo extends StatelessWidget {
               leading: Icon(Icons.face),
               title: Text('Credits',
                 style: TextStyle(fontFamily: 'InriaSans', color: Colors.black, fontSize: 18)),
-              onTap: () => {Navigator.of(context).pop()},
+              onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Credits()))},
             ),
             ListTile(
               leading: Icon(Icons.insert_emoticon),

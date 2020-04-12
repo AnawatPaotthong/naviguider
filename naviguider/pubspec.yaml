@@ -43,6 +43,8 @@ flutter:
     - images/Locker2.jpg
     - images/oro.png
     - images/BehideOro.jpg
+    - images/Loker1.jpg
+    - images/Locker.jpg
 
   fonts:
     - family: InriaSans
