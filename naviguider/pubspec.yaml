@@ -35,7 +35,13 @@ flutter:
     - images/map3.JPG
     - images/map_with_marker1.JPG
     - images/map_with_marker2.JPG
+
     - images/LearningSpace1.jpg
+    - images/ProjectorRoom.jpg
+    - images/LearningSpace1.jpg
+    - images/LearningSpace2.jpg
+    - images/oroPic.png
+
   fonts:
     - family: InriaSans
       fonts:
