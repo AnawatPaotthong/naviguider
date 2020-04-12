@@ -57,8 +57,6 @@ class Logo extends StatelessWidget {
   }
 }
 
-
-
   class NavDrawer extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
@@ -92,13 +90,7 @@ class Logo extends StatelessWidget {
               title: Text('Credits',
                 style: TextStyle(fontFamily: 'InriaSans', color: Colors.black, fontSize: 18)),
               onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Credits()))},
-            ),
-            ListTile(
-              leading: Icon(Icons.insert_emoticon),
-              title: Text('FeedBack',
-                style: TextStyle(fontFamily: 'InriaSans', color: Colors.black, fontSize: 18)),
-              onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => FeedBack()))},
-            ),
+            )
           ],
         ),
       );
