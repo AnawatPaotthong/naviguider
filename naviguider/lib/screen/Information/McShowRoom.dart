@@ -10,7 +10,7 @@ class McRoom extends StatelessWidget {
       width: 350,
       child: Carousel(
         images: [
-          NetworkImage('https://cdn.shopify.com/s/files/1/0506/3177/products/seaga-infinity-INF5C-left_600x.jpg?v=1487368702'),
+          NetworkImage('http://healthierlogo.com/wp-content/uploads/2016/05/IMG_1794-1030x773.jpg'),
           NetworkImage('https://www.amequipmentsales.com/wp-content/uploads/2019/07/side.jpg')
         ],
         dotSize: 4.0,

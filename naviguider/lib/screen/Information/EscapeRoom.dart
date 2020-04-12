@@ -10,7 +10,7 @@ class EscapeRoom extends StatelessWidget {
       width: 350,
       child: Carousel(
         images: [
-          NetworkImage('https://cdn.shopify.com/s/files/1/0506/3177/products/seaga-infinity-INF5C-left_600x.jpg?v=1487368702'),
+          NetworkImage('https://kiji.life/newkiji/wp-content/uploads/2018/02/Adult-Zone_%E0%B8%AB%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%A7%E0%B8%87%E0%B8%81%E0%B8%95.jpg'),
           NetworkImage('https://www.amequipmentsales.com/wp-content/uploads/2019/07/side.jpg')
         ],
         dotSize: 4.0,

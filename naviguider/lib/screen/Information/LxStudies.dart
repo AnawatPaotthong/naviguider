@@ -10,8 +10,15 @@ class LxStudies extends StatelessWidget {
       width: 350,
       child: Carousel(
         images: [
-          NetworkImage('https://lh3.googleusercontent.com/proxy/NcYyqWaUhx3MgQhAVHVxnJyM8dHOh0wSK9ANjdcM1W9lPmJti2zzG1ijZaG3YI-GAH33msplwXnoOjnqgsYLmtngI1TKQmngTSHSjHlUyVZH2qh8jjJPH0lHajOaxME'),
-          NetworkImage('https://www.amequipmentsales.com/wp-content/uploads/2019/07/side.jpg')
+          //AssetImage('images/learningSpace3.jpg'),
+          //AssetImage('images/Locker2.jpg'),
+          //AssetImage('images/Locker3.jpg') 
+            
+            
+          
+           NetworkImage('https://lh3.googleusercontent.com/proxy/NcYyqWaUhx3MgQhAVHVxnJyM8dHOh0wSK9ANjdcM1W9lPmJti2zzG1ijZaG3YI-GAH33msplwXnoOjnqgsYLmtngI1TKQmngTSHSjHlUyVZH2qh8jjJPH0lHajOaxME'),
+           NetworkImage('https://www.amequipmentsales.com/wp-content/uploads/2019/07/side.jpg')
+          
         ],
         dotSize: 4.0,
         dotSpacing: 15.0,

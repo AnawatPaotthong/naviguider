@@ -10,8 +10,8 @@ class EntreShowCart extends StatelessWidget {
       width: 350,
       child: Carousel(
         images: [
-          NetworkImage('https://cdn.shopify.com/s/files/1/0506/3177/products/seaga-infinity-INF5C-left_600x.jpg?v=1487368702'),
-          NetworkImage('https://www.amequipmentsales.com/wp-content/uploads/2019/07/side.jpg')
+          NetworkImage('https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F96051725%2F126908742899%2F1%2Foriginal.20200309-201326?w=1000&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C19%2C960%2C480&s=ebaef76fa8d4c6f7f79d107680c76b26'),
+          NetworkImage('https://i.ytimg.com/vi/NXzBCu66i-4/maxresdefault.jpg')
         ],
         dotSize: 4.0,
         dotSpacing: 15.0,
