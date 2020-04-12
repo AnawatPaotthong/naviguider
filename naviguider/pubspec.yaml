@@ -35,6 +35,7 @@ flutter:
     - images/map3.JPG
     - images/map_with_marker1.JPG
     - images/map_with_marker2.JPG
+    - images/LearningSpace1.jpg
   fonts:
     - family: InriaSans
       fonts:
