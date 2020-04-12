@@ -6,12 +6,12 @@ class EntreShowCart extends StatelessWidget {
   Widget build(BuildContext context) {
     
     Widget imageCarousel = SizedBox(
-      height: 500,
+      height: 300,
       width: 350,
       child: Carousel(
         images: [
-          NetworkImage('https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F96051725%2F126908742899%2F1%2Foriginal.20200309-201326?w=1000&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C19%2C960%2C480&s=ebaef76fa8d4c6f7f79d107680c76b26'),
-          NetworkImage('https://i.ytimg.com/vi/NXzBCu66i-4/maxresdefault.jpg')
+          Image.network('https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F96051725%2F126908742899%2F1%2Foriginal.20200309-201326?w=1000&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C19%2C960%2C480&s=ebaef76fa8d4c6f7f79d107680c76b26'),
+          Image.network('https://i.ytimg.com/vi/NXzBCu66i-4/maxresdefault.jpg')
         ],
         dotSize: 4.0,
         dotSpacing: 15.0,
@@ -20,6 +20,20 @@ class EntreShowCart extends StatelessWidget {
         dotBgColor: Colors.orange.withOpacity(0.5),
         borderRadius: true,
       ),
+    );
+
+    Widget title = Container(
+      margin: const EdgeInsets.all(15),
+      padding: const EdgeInsets.all(10),
+      child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque, mauris vitae vulputate porttitor, urna est rutrum dolor,'
+      'non ultricies risus est tempus justo. Aenean vel odio sit amet magna egestas pretium. Suspendisse quis turpis euismod, laoreet tortor eget,'
+      'maximus purus. Aliquam euismod egestas efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer aliquet',
+      textAlign: TextAlign.justify,
+      style: TextStyle(
+        fontFamily: 'InriaSans',
+        color: Colors.red,
+        fontWeight: FontWeight.bold
+      ),),
     );
 
     return MaterialApp(
@@ -35,7 +49,8 @@ class EntreShowCart extends StatelessWidget {
         body: Center(
           child: Column(
             children: <Widget>[
-              imageCarousel
+              imageCarousel,
+              title
             ],
           ),
         ),

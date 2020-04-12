@@ -6,13 +6,13 @@ class LxStudies extends StatelessWidget {
   Widget build(BuildContext context) {
     
     Widget imageCarousel = SizedBox(
-      height: 500,
+      height: 300,
       width: 350,
       child: Carousel(
         images: [
-           NetworkImage('https://lh3.googleusercontent.com/proxy/NcYyqWaUhx3MgQhAVHVxnJyM8dHOh0wSK9ANjdcM1W9lPmJti2zzG1ijZaG3YI-GAH33msplwXnoOjnqgsYLmtngI1TKQmngTSHSjHlUyVZH2qh8jjJPH0lHajOaxME'),
-           NetworkImage('https://www.amequipmentsales.com/wp-content/uploads/2019/07/side.jpg')
-          
+          Image.asset('images/LearningSpace1.jpg'),
+          Image.asset('images/LearningSpace2.jpg'),
+          Image.asset('images/learningSpace3.jpg'),
         ],
         dotSize: 4.0,
         dotSpacing: 15.0,
@@ -21,6 +21,20 @@ class LxStudies extends StatelessWidget {
         dotBgColor: Colors.orange.withOpacity(0.5),
         borderRadius: true,
       ),
+    );
+
+    Widget title = Container(
+      margin: const EdgeInsets.all(15),
+      padding: const EdgeInsets.all(10),
+      child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque, mauris vitae vulputate porttitor, urna est rutrum dolor,'
+      'non ultricies risus est tempus justo. Aenean vel odio sit amet magna egestas pretium. Suspendisse quis turpis euismod, laoreet tortor eget,'
+      'maximus purus. Aliquam euismod egestas efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer aliquet',
+      textAlign: TextAlign.justify,
+      style: TextStyle(
+        fontFamily: 'InriaSans',
+        color: Colors.red,
+        fontWeight: FontWeight.bold
+      ),),
     );
 
     return MaterialApp(
@@ -36,7 +50,8 @@ class LxStudies extends StatelessWidget {
         body: Center(
           child: Column(
             children: <Widget>[
-              imageCarousel
+              imageCarousel,
+              title
             ],
           ),
         ),

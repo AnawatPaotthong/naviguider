@@ -93,23 +93,13 @@ class MainMap extends StatelessWidget{
     );
 
     Widget popupButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Oro()))},
+      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Popup()))},
       color: popUpColor,
       child: Text('PopUp Exhibition',
       style: TextStyle(
         color: Colors.white, fontFamily: 'InriaSans',
       ),)
       ,
-    );
-
-    Widget tryIt = RaisedButton(
-      child: Text('Press it'),
-      onPressed: () {
-        Scaffold.of(context).showSnackBar(SnackBar(
-          content: Text('Hello!'),
-          duration: Duration(seconds: 3),)
-          );
-      },
     );
 
   Widget listOfButton = (
@@ -157,7 +147,6 @@ class MainMap extends StatelessWidget{
               height: 240,
               width: 600,
               fit: BoxFit.cover,),
-              tryIt,
               listOfButton
             ],
           ),

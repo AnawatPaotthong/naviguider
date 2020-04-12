@@ -6,12 +6,12 @@ class EscapeRoom extends StatelessWidget {
   Widget build(BuildContext context) {
     
     Widget imageCarousel = SizedBox(
-      height: 500,
+      height: 300,
       width: 350,
       child: Carousel(
         images: [
-          NetworkImage('https://kiji.life/newkiji/wp-content/uploads/2018/02/Adult-Zone_%E0%B8%AB%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%A7%E0%B8%87%E0%B8%81%E0%B8%95.jpg'),
-          NetworkImage('https://www.amequipmentsales.com/wp-content/uploads/2019/07/side.jpg')
+          Image.network('https://media-cdn.tripadvisor.com/media/photo-s/0b/6b/a1/eb/dark-room.jpg'),
+          Image.network('https://media-cdn.tripadvisor.com/media/photo-s/0a/4a/33/d2/dark-and-dingy-room-with.jpg')
         ],
         dotSize: 4.0,
         dotSpacing: 15.0,
@@ -20,6 +20,20 @@ class EscapeRoom extends StatelessWidget {
         dotBgColor: Colors.orange.withOpacity(0.5),
         borderRadius: true,
       ),
+    );
+
+    Widget title = Container(
+      margin: const EdgeInsets.all(15),
+      padding: const EdgeInsets.all(10),
+      child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque, mauris vitae vulputate porttitor, urna est rutrum dolor,'
+      'non ultricies risus est tempus justo. Aenean vel odio sit amet magna egestas pretium. Suspendisse quis turpis euismod, laoreet tortor eget,'
+      'maximus purus. Aliquam euismod egestas efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer aliquet',
+      textAlign: TextAlign.justify,
+      style: TextStyle(
+        fontFamily: 'InriaSans',
+        color: Colors.red,
+        fontWeight: FontWeight.bold
+      ),),
     );
 
     return MaterialApp(
@@ -35,7 +49,8 @@ class EscapeRoom extends StatelessWidget {
         body: Center(
           child: Column(
             children: <Widget>[
-              imageCarousel
+              imageCarousel,
+              title
             ],
           ),
         ),

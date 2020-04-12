@@ -7,12 +7,6 @@ class DesignConcept extends StatelessWidget {
     
     Widget title = Container(
       margin: const EdgeInsets.all(5),
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: Colors.blue,
-        ),
-        borderRadius: BorderRadius.circular(10),
-      ),
       padding: const EdgeInsets.all(10),
       child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque, mauris vitae vulputate porttitor, urna est rutrum dolor,'
       'non ultricies risus est tempus justo. Aenean vel odio sit amet magna egestas pretium. Suspendisse quis turpis euismod, laoreet tortor eget,'
