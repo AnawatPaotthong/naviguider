@@ -9,6 +9,7 @@ import 'package:naviguider/screen/exhibitionZone/selfPrac.dart';
 import 'package:naviguider/screen/exhibitionZone/selfSnack.dart';
 import 'package:naviguider/screen/exhibitionZone/selfStorage.dart';
 import 'package:naviguider/screen/exhibitionZone/vrARMR.dart';
+import 'package:photo_view/photo_view.dart';
 
 class RightTopMap extends StatelessWidget {
   @override
@@ -141,7 +142,13 @@ class RightTopMap extends StatelessWidget {
         ]),
       ],
       )
-  );
+    );
+
+    // Widget photoMap = Container(
+    //   child: PhotoView(
+    //     imageProvider: Image.asset('images/map3.JPG')
+    //     ),
+    // );
 
     return MaterialApp(
       title: 'Exhibition Zone',
@@ -156,6 +163,7 @@ class RightTopMap extends StatelessWidget {
         body: Center(
           child: Column(
             children: <Widget>[
+              ZoomableImage(ExactAssetImage('assets/images/umbrella.png')),
               Image.asset('images/map3.JPG',
               fit: BoxFit.fill,),
               listOfButton
