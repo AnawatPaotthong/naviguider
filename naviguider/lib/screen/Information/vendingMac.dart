@@ -36,9 +36,63 @@ class VendingMac extends StatelessWidget {
       ),),
     );
 
+    Widget surroundCarousel = SizedBox(
+      height: 350,
+      width: 350,
+      child: Carousel(
+        images: [
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('The Front Gate'),
+                ),
+                Image.asset('images/GateSola.jpg')
+              ],
+            ),
+          ),
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('Pop Up Exhibition'),
+                ),
+                Image.network('https://www.linkingmakerandmarket.com/wp-content/uploads/2016/02/Linking-Maker-and-Market-Popup-exhibition-ecostyle-2015-1-1100x488.jpg',)
+              ],
+            ),
+          )
+        ],
+        dotSize: 4.0,
+        dotSpacing: 15.0,
+        dotColor: Colors.lightGreenAccent,
+        indicatorBgPadding: 5.0,
+        dotBgColor: Colors.orange.withOpacity(0.5),
+        borderRadius: true,
+      ),
+    );
+
+
+    Widget surrounded = Container(
+      margin: EdgeInsets.all(30),
+      child: Text('Surrounded Area',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontFamily: 'InriaSans',
+        color: Colors.black,
+        fontWeight: FontWeight.bold,
+        fontSize: 30
+        ),
+      ),
+    );
+
+
+
     return MaterialApp(
       title: 'vendingMachine',
       home: Scaffold(
+        resizeToAvoidBottomPadding: false,
         appBar: AppBar(
           automaticallyImplyLeading: true,
           backgroundColor: Colors.orange.shade400,
@@ -47,11 +101,15 @@ class VendingMac extends StatelessWidget {
             onPressed: () => Navigator.pop(context, false),),
         ),
         body: Center(
-          child: Column(
-            children: <Widget>[
-              imageCarousel,
-              title
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                imageCarousel,
+                title,
+                surrounded,
+                surroundCarousel
+              ],
+            ),
           ),
         ),
       ),

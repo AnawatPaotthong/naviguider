@@ -29,6 +29,7 @@ class Credits extends StatelessWidget {
             ),
           ),
           ),
+
         Container(
           margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
           child: Center(
@@ -51,6 +52,7 @@ class Credits extends StatelessWidget {
             ),
           ),
         ),
+        
         Container(
           margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
           child: Center(
