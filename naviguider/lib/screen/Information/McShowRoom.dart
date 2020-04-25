@@ -11,7 +11,6 @@ class McRoom extends StatelessWidget {
       child: Carousel(
         images: [
           Image.network('https://www.beat.com.au/wp-content/uploads/2020/01/The-MC-Showroom-min.jpg'),
-          Image.network('https://lh3.googleusercontent.com/proxy/HL0JrszTzTyySy3Xicq_qxDBFxajpIws5W3jevS-3V67T8Plp_POc7i12dUJzpKco7V11PmzOvypX8BMIuVgy_c3lgAp9PCSDRm1zl1uMB7xM1qlbvVgfVZVcyfxmT_BGKM7kA'),
           Image.network('https://www.creativespaces.net.au/uploads/listing-images/73942/resized/601x338.jpg')
         ],
         dotSize: 4.0,

@@ -15,8 +15,9 @@ dependencies:
   flutter:
     sdk: flutter
   carousel_pro: ^1.0.0
-
+  page_transition: "^1.1.5"
   cupertino_icons: ^0.1.0
+
 
 dev_dependencies:
   flutter_test:

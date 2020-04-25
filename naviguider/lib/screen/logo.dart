@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:naviguider/screen/credits.dart';
-import 'package:naviguider/screen/feedback.dart';
+import 'package:page_transition/page_transition.dart';
 import 'designConcept.dart';
 import 'Map.dart';
 
@@ -10,7 +10,7 @@ class Logo extends StatelessWidget {
     
     Widget button(){
     return RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => MainMap()))},
+      onPressed: () => {Navigator.push(context, PageTransition(child: MainMap(), type: PageTransitionType.rightToLeft))},
       textColor: Colors.deepOrange,
       child: Text('Press this to show map'),
     );
@@ -65,6 +65,7 @@ class Logo extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
+              padding: EdgeInsets.only(top: 100, left: 10),
               child: Text(
                 'Side menu',
                 style: TextStyle(color: Colors.white, fontSize: 25),
