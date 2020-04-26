@@ -144,11 +144,13 @@ class RightTopMap extends StatelessWidget {
       )
     );
 
-    // Widget photoMap = Container(
-    //   child: PhotoView(
-    //     imageProvider: Image.asset('images/map3.JPG')
-    //     ),
-    // );
+    Widget photoMap = Container(
+      width: double.infinity,
+      height: 300,
+      child: PhotoView(
+        imageProvider: AssetImage('images/map3.JPG')
+        ),
+    );
 
     return MaterialApp(
       title: 'Exhibition Zone',
@@ -160,17 +162,13 @@ class RightTopMap extends StatelessWidget {
           leading: IconButton(icon: Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context, false),),
         ),
-        body: Center(
-          child: Column(
-            children: <Widget>[
-              ZoomableImage(ExactAssetImage('assets/images/umbrella.png')),
-              Image.asset('images/map3.JPG',
-              fit: BoxFit.fill,),
-              listOfButton
-            ],
-          ),
+        body: Column(
+          children: <Widget>[
+            photoMap,
+            listOfButton
+          ],
         ),
-      ),
+          ),
     );
   }
 }
