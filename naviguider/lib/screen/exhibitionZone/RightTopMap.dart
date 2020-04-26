@@ -144,12 +144,16 @@ class RightTopMap extends StatelessWidget {
       )
     );
 
-    Widget photoMap = Container(
-      width: double.infinity,
-      height: 300,
-      child: PhotoView(
-        imageProvider: AssetImage('images/map3.JPG')
-        ),
+    Widget photoMap = AspectRatio(
+      aspectRatio: 2 / 1.5,
+      child: ClipRect(
+        child: PhotoView(
+          imageProvider: AssetImage('images/map3.JPG'),
+          minScale: PhotoViewComputedScale.contained * 0.8,
+          maxScale: PhotoViewComputedScale.covered * 2,
+          enableRotation: true,
+          ),
+      )
     );
 
     return MaterialApp(
@@ -162,13 +166,15 @@ class RightTopMap extends StatelessWidget {
           leading: IconButton(icon: Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context, false),),
         ),
-        body: Column(
-          children: <Widget>[
-            photoMap,
-            listOfButton
-          ],
-        ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              photoMap,
+              listOfButton
+            ],
+            ),
           ),
+      ),
     );
   }
 }
