@@ -32,8 +32,72 @@ class McRoom extends StatelessWidget {
       style: TextStyle(
         fontFamily: 'InriaSans',
         color: Colors.red,
-        fontWeight: FontWeight.bold
+        fontWeight: FontWeight.normal
       ),),
+    );
+
+    Widget surroundCarousel = SizedBox(
+      height: 350,
+      width: 350,
+      child: Carousel(
+        images: [
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('Research Show Case', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12
+                ),),
+                ),
+                Image.asset('images/GateSola.jpg')
+              ],
+            ),
+          ),
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('Entrepeneur Innovation Show Cart', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.purpleAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12),
+                  ),
+                ),
+                Image.network('https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F96051725%2F126908742899%2F1%2Foriginal.20200309-201326?w=1000&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C19%2C960%2C480&s=ebaef76fa8d4c6f7f79d107680c76b26')
+              ],
+            ),
+          )
+        ],
+        showIndicator: false,
+        borderRadius: false,
+        moveIndicatorFromBottom: 180.0,
+        noRadiusForIndicator: true,
+        overlayShadow: true,
+        overlayShadowColors: Colors.white,
+        overlayShadowSize: 0.7,
+      ),
+    );
+
+
+    Widget surrounded = Container(
+      margin: EdgeInsets.all(30),
+      child: Text('Surrounded Area',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontFamily: 'InriaSans',
+        color: Colors.cyan,
+        fontWeight: FontWeight.bold,
+        fontSize: 30
+        ),
+      ),
     );
 
     return MaterialApp(
@@ -47,11 +111,15 @@ class McRoom extends StatelessWidget {
             onPressed: () => Navigator.pop(context, false),),
         ),
         body: Center(
-          child: Column(
-            children: <Widget>[
-              imageCarousel,
-              title
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                imageCarousel,
+                title,
+                surrounded,
+                surroundCarousel
+              ],
+            ),
           ),
         ),
       ),

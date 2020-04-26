@@ -36,6 +36,70 @@ class ActiveEx extends StatelessWidget {
       ),),
     );
 
+    Widget surroundCarousel = SizedBox(
+      height: 350,
+      width: 350,
+      child: Carousel(
+        images: [
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('Self Predicted Learning', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12
+                ),),
+                ),
+                Image.network('https://makeblock.in.th/wp-content/uploads/2019/03/c334b9abade19a0c3c8b5bd6c38bcfe44_33125012_190306_0011.jpg'),
+              ],
+            ),
+          ),
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('Design Studio', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.purpleAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12),
+                  ),
+                ),
+                Image.network('https://images.adsttc.com/media/images/5d7b/a7a9/284d/d1e0/b600/00b4/newsletter/Soar_Boxes-0096.jpg?1568384931')
+              ],
+            ),
+          )
+        ],
+        showIndicator: false,
+        borderRadius: false,
+        moveIndicatorFromBottom: 180.0,
+        noRadiusForIndicator: true,
+        overlayShadow: true,
+        overlayShadowColors: Colors.white,
+        overlayShadowSize: 0.7,
+      ),
+    );
+
+
+    Widget surrounded = Container(
+      margin: EdgeInsets.all(30),
+      child: Text('Surrounded Area',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontFamily: 'InriaSans',
+        color: Colors.cyan,
+        fontWeight: FontWeight.bold,
+        fontSize: 30
+        ),
+      ),
+    );
+
     return MaterialApp(
       title: 'Active Exhibition',
       home: Scaffold(
@@ -47,11 +111,15 @@ class ActiveEx extends StatelessWidget {
             onPressed: () => Navigator.pop(context, false),),
         ),
         body: Center(
-          child: Column(
-            children: <Widget>[
-              imageCarousel,
-              title
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                imageCarousel,
+                title,
+                surrounded,
+                surroundCarousel
+              ],
+            ),
           ),
         ),
       ),

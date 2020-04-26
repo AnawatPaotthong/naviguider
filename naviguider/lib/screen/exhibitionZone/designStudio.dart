@@ -37,6 +37,87 @@ class DesignStudio extends StatelessWidget {
       ),),
     );
 
+    Widget surroundCarousel = SizedBox(
+      height: 350,
+      width: 350,
+      child: Carousel(
+        images: [
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('Active Exhibition', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12
+                ),),
+                ),
+                Image.network('https://www.thespaceaguideforeducators.com/wp-content/uploads/2017/07/061-800x533.jpg')
+              ],
+            ),
+          ),
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('Hands On / Workshop', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.purpleAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12),
+                  ),
+                ),
+                Image.network('https://www.baanlaesuan.com/app/uploads/2019/07/cover-Activity.jpg'),
+              ],
+            ),
+          ),
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('Media Studio', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.purpleAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12),
+                  ),
+                ),
+                Image.network('https://logosolusa.com/wp-content/uploads/parser/Media-Studio-Logo-1.jpg'),
+              ],
+            ),
+          )
+        ],
+        showIndicator: false,
+        borderRadius: false,
+        moveIndicatorFromBottom: 180.0,
+        noRadiusForIndicator: true,
+        overlayShadow: true,
+        overlayShadowColors: Colors.white,
+        overlayShadowSize: 0.7,
+      ),
+    );
+
+
+    Widget surrounded = Container(
+      margin: EdgeInsets.all(30),
+      child: Text('Surrounded Area',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontFamily: 'InriaSans',
+        color: Colors.cyan,
+        fontWeight: FontWeight.bold,
+        fontSize: 30
+        ),
+      ),
+    );
+
     return MaterialApp(
       title: 'Design Studio',
       home: Scaffold(
@@ -48,11 +129,15 @@ class DesignStudio extends StatelessWidget {
             onPressed: () => Navigator.pop(context, false),),
         ),
         body: Center(
-          child: Column(
-            children: <Widget>[
-              imageCarousel,
-              title
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                imageCarousel,
+                title,
+                surrounded,
+                surroundCarousel
+              ],
+            ),
           ),
         ),
       ),

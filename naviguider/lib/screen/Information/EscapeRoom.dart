@@ -32,8 +32,72 @@ class EscapeRoom extends StatelessWidget {
       style: TextStyle(
         fontFamily: 'InriaSans',
         color: Colors.red,
-        fontWeight: FontWeight.bold
+        fontWeight: FontWeight.normal
       ),),
+    );
+
+    Widget surroundCarousel = SizedBox(
+      height: 350,
+      width: 350,
+      child: Carousel(
+        images: [
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('Exhibition Zone', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12
+                ),),
+                ),
+                Image.asset('images/GateSola.jpg')
+              ],
+            ),
+          ),
+          Card(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const ListTile(
+                  title: Text('ORO Mascot', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.purpleAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12),
+                  ),
+                ),
+                Image.asset('images/oro.jpg'),
+              ],
+            ),
+          )
+        ],
+        showIndicator: false,
+        borderRadius: false,
+        moveIndicatorFromBottom: 180.0,
+        noRadiusForIndicator: true,
+        overlayShadow: true,
+        overlayShadowColors: Colors.white,
+        overlayShadowSize: 0.7,
+      ),
+    );
+
+
+    Widget surrounded = Container(
+      margin: EdgeInsets.all(30),
+      child: Text('Surrounded Area',
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontFamily: 'InriaSans',
+        color: Colors.cyan,
+        fontWeight: FontWeight.bold,
+        fontSize: 30
+        ),
+      ),
     );
 
     return MaterialApp(
@@ -47,11 +111,15 @@ class EscapeRoom extends StatelessWidget {
             onPressed: () => Navigator.pop(context, false),),
         ),
         body: Center(
-          child: Column(
-            children: <Widget>[
-              imageCarousel,
-              title
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                imageCarousel,
+                title,
+                surrounded,
+                surroundCarousel
+              ],
+            ),
           ),
         ),
       ),

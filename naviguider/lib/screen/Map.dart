@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:naviguider/screen/Information/vendingMac.dart';
+import 'package:photo_view/photo_view.dart';
 import 'Information/oro.dart';
 import 'exhibitionZone/RightTopMap.dart';
 import 'package:naviguider/screen/Information/EntreShowCart.dart';
@@ -128,6 +129,18 @@ class MainMap extends StatelessWidget{
       )
   );
 
+  Widget photoMap = AspectRatio(
+      aspectRatio: 2 / 1.5,
+      child: ClipRect(
+        child: PhotoView(
+          imageProvider: AssetImage('images/map_with_marker1.JPG'),
+          minScale: PhotoViewComputedScale.contained * 0.8,
+          maxScale: PhotoViewComputedScale.covered * 2,
+          enableRotation: true,
+          ),
+      )
+    );
+
     return MaterialApp(
       title: 'LX Main Map',
       home: Scaffold(
@@ -139,18 +152,14 @@ class MainMap extends StatelessWidget{
           leading: IconButton(icon: Icon(Icons.arrow_back),
             onPressed: () => Navigator.pop(context, false),),
         ),
-        body: Container(
-          margin: const EdgeInsets.all(15),
+        body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              Image.asset('images/map_with_marker1.JPG',
-              height: 240,
-              width: 600,
-              fit: BoxFit.cover,),
+              photoMap,
               listOfButton
-            ],
+              ],
+            ),
           ),
-        ),
       ),
     );
   }

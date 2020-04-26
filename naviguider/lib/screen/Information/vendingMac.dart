@@ -32,7 +32,8 @@ class VendingMac extends StatelessWidget {
       style: TextStyle(
         fontFamily: 'InriaSans',
         color: Colors.red,
-        fontWeight: FontWeight.bold
+        fontWeight: FontWeight.normal,
+        fontSize: 15
       ),),
     );
 
@@ -46,7 +47,13 @@ class VendingMac extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 const ListTile(
-                  title: Text('The Front Gate'),
+                  title: Text('The Front Gate', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12
+                ),),
                 ),
                 Image.asset('images/GateSola.jpg')
               ],
@@ -57,19 +64,26 @@ class VendingMac extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 const ListTile(
-                  title: Text('Pop Up Exhibition'),
+                  title: Text('Pop Up Exhibition', textAlign: TextAlign.center,
+                  style: TextStyle(
+                  fontFamily: 'InriaSans',
+                  color: Colors.purpleAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12),
+                  ),
                 ),
                 Image.network('https://www.linkingmakerandmarket.com/wp-content/uploads/2016/02/Linking-Maker-and-Market-Popup-exhibition-ecostyle-2015-1-1100x488.jpg',)
               ],
             ),
           )
         ],
-        dotSize: 4.0,
-        dotSpacing: 15.0,
-        dotColor: Colors.lightGreenAccent,
-        indicatorBgPadding: 5.0,
-        dotBgColor: Colors.orange.withOpacity(0.5),
-        borderRadius: true,
+        showIndicator: false,
+        borderRadius: false,
+        moveIndicatorFromBottom: 180.0,
+        noRadiusForIndicator: true,
+        overlayShadow: true,
+        overlayShadowColors: Colors.white,
+        overlayShadowSize: 0.7,
       ),
     );
 
@@ -80,7 +94,7 @@ class VendingMac extends StatelessWidget {
       textAlign: TextAlign.center,
       style: TextStyle(
         fontFamily: 'InriaSans',
-        color: Colors.black,
+        color: Colors.cyan,
         fontWeight: FontWeight.bold,
         fontSize: 30
         ),
