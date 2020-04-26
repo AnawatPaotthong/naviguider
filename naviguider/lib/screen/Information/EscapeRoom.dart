@@ -49,7 +49,7 @@ class EscapeRoom extends StatelessWidget {
                   title: Text('Exhibition Zone', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.black,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12
                 ),),
@@ -66,7 +66,7 @@ class EscapeRoom extends StatelessWidget {
                   title: Text('ORO Mascot', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.brown,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),

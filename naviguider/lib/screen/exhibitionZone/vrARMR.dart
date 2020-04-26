@@ -50,7 +50,7 @@ class VrArMr extends StatelessWidget {
                   title: Text('Media Studio', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.black,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12
                 ),),
@@ -67,7 +67,7 @@ class VrArMr extends StatelessWidget {
                   title: Text('Hands On / Workshop', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),
@@ -84,7 +84,7 @@ class VrArMr extends StatelessWidget {
                   title: Text('Digital Based Exhibition', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.black,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12
                 ),),
@@ -101,7 +101,7 @@ class VrArMr extends StatelessWidget {
                   title: Text('Know And Share', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.black,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12
                 ),),

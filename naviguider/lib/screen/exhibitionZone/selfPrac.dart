@@ -67,7 +67,7 @@ class SelfPracticeLearning extends StatelessWidget {
                   title: Text('Active Exhibition', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),
@@ -84,7 +84,7 @@ class SelfPracticeLearning extends StatelessWidget {
                   title: Text('Self Snacks', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),
@@ -101,7 +101,7 @@ class SelfPracticeLearning extends StatelessWidget {
                   title: Text('Media Studio', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),

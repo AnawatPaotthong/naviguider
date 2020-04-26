@@ -66,7 +66,7 @@ class ActiveEx extends StatelessWidget {
                   title: Text('Design Studio', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),

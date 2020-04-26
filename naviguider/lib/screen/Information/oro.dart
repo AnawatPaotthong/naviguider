@@ -68,7 +68,7 @@ class Oro extends StatelessWidget {
                   title: Text('Escape Room', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.deepOrange,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),

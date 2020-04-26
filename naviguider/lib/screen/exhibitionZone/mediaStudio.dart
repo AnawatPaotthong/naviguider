@@ -49,7 +49,7 @@ class MediaStudio extends StatelessWidget {
                   title: Text('Self Snacks', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.black,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12
                 ),),
@@ -66,7 +66,7 @@ class MediaStudio extends StatelessWidget {
                   title: Text('Self Predicted Learning', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),
@@ -83,7 +83,7 @@ class MediaStudio extends StatelessWidget {
                   title: Text('Active Exhibition', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.black,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12
                 ),),
@@ -100,7 +100,7 @@ class MediaStudio extends StatelessWidget {
                   title: Text('Design Studio', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.black,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12
                 ),),

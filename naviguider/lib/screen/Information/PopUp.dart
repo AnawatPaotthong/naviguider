@@ -49,7 +49,7 @@ class Popup extends StatelessWidget {
                   title: Text('Entrepeneur Innovation Show Cart', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.brown,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),
@@ -66,7 +66,7 @@ class Popup extends StatelessWidget {
                   title: Text('Vending Machine', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.indigo,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),

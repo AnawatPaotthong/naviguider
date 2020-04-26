@@ -67,7 +67,7 @@ class VendingMac extends StatelessWidget {
                   title: Text('Pop Up Exhibition', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.purple,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),

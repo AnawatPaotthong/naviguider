@@ -49,7 +49,7 @@ class EntreShowCart extends StatelessWidget {
                   title: Text('MC Show Room', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.black,
+                  color: Colors.pinkAccent,
                   fontWeight: FontWeight.bold,
                   fontSize: 12
                 ),),

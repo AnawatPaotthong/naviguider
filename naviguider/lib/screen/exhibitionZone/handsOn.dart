@@ -49,7 +49,7 @@ class HandsOnWorkShop extends StatelessWidget {
                   title: Text('Design Studio', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.black,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12
                 ),),
@@ -66,7 +66,7 @@ class HandsOnWorkShop extends StatelessWidget {
                   title: Text('Media Studio', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),
@@ -83,7 +83,7 @@ class HandsOnWorkShop extends StatelessWidget {
                   title: Text('VR AR MR', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.purpleAccent,
+                  color: Colors.green,
                   fontWeight: FontWeight.bold,
                   fontSize: 12),
                   ),
