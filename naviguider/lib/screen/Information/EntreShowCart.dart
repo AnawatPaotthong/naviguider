@@ -49,7 +49,7 @@ class EntreShowCart extends StatelessWidget {
                   title: Text('MC Show Room', textAlign: TextAlign.center,
                   style: TextStyle(
                   fontFamily: 'InriaSans',
-                  color: Colors.pinkAccent,
+                  color: Colors.redAccent,
                   fontWeight: FontWeight.bold,
                   fontSize: 12
                 ),),
@@ -71,7 +71,9 @@ class EntreShowCart extends StatelessWidget {
                   fontSize: 12),
                   ),
                 ),
-                Image.network('https://www.linkingmakerandmarket.com/wp-content/uploads/2016/02/Linking-Maker-and-Market-Popup-exhibition-ecostyle-2015-1-1100x488.jpg',)
+                Image.network('https://www.linkingmakerandmarket.com/wp-content/uploads/2016/02/Linking-Maker-and-Market-Popup-exhibition-ecostyle-2015-1-1100x488.jpg',
+                height: 200,
+                ),
               ],
             ),
           )

@@ -54,7 +54,12 @@ class McRoom extends StatelessWidget {
                   fontSize: 12
                 ),),
                 ),
-                Image.asset('images/GateSola.jpg')
+                Image.asset('images/GateSola.jpg',
+                //  width: 300,
+                // height: 200,
+                fit: BoxFit.cover
+                ),
+                
               ],
             ),
           ),
@@ -71,7 +76,10 @@ class McRoom extends StatelessWidget {
                   fontSize: 12),
                   ),
                 ),
-                Image.network('https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F96051725%2F126908742899%2F1%2Foriginal.20200309-201326?w=1000&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C19%2C960%2C480&s=ebaef76fa8d4c6f7f79d107680c76b26')
+                Image.asset('images/EntreShowCase.jpg',
+                width: 500,
+                height: 250,
+                ),
               ],
             ),
           )

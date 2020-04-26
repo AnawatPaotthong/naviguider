@@ -52,6 +52,7 @@ flutter:
     - images/tae.jpg
     - images/poom.jpg
     - images/GateSola.jpg
+    - images/EntreShowCase.jpg
 
   fonts:
     - family: InriaSans
