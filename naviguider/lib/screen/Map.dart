@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:naviguider/screen/Information/vendingMac.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:photo_view/photo_view.dart';
 import 'Information/oro.dart';
 import 'exhibitionZone/RightTopMap.dart';
@@ -25,7 +26,7 @@ class MainMap extends StatelessWidget{
   Widget build(BuildContext context) {
 
   Widget mcButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => McRoom()))},
+      onPressed: () => {Navigator.push(context, PageTransition(child: McRoom(), type: PageTransitionType.rightToLeftWithFade))},
       color: mcColor,
       child: Text('MC. Show Room',
       style: TextStyle(
@@ -34,7 +35,7 @@ class MainMap extends StatelessWidget{
     );
 
   Widget lxButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => LxStudies()))},
+      onPressed: () => {Navigator.push(context, PageTransition(child: LxStudies(), type: PageTransitionType.rightToLeftWithFade))},
       color: lxColor,
       child: Text('LX Building Studies',
       style: TextStyle(
@@ -44,7 +45,7 @@ class MainMap extends StatelessWidget{
     );
 
   Widget escapeButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => EscapeRoom()))},
+      onPressed: () => {Navigator.push(context, PageTransition(child: EscapeRoom(), type: PageTransitionType.rightToLeftWithFade))},
       color: escapeColor,
       child: Text('Escape Room',
       style: TextStyle(
@@ -54,7 +55,7 @@ class MainMap extends StatelessWidget{
     );
 
   Widget oroButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Oro()))},
+      onPressed: () => {Navigator.push(context, PageTransition(child: Oro(), type: PageTransitionType.rightToLeftWithFade))},
       color: oroColor,
       child: Text('ORO',
       style: TextStyle(
@@ -64,7 +65,7 @@ class MainMap extends StatelessWidget{
     );
 
     Widget entButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => EntreShowCart()))},
+      onPressed: () => {Navigator.push(context, PageTransition(child: EntreShowCart(), type: PageTransitionType.rightToLeftWithFade))},
       color: entColor,
       child: Text('Entrepreneur Innovation Show Cart',
       style: TextStyle(
@@ -74,7 +75,7 @@ class MainMap extends StatelessWidget{
     );
 
     Widget venButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => VendingMac()))},
+      onPressed: () => {Navigator.push(context, PageTransition(child: VendingMac(), type: PageTransitionType.rightToLeftWithFade))},
       color: vendColor,
       child: Text('Vending Machine', 
       style: TextStyle(
@@ -84,7 +85,7 @@ class MainMap extends StatelessWidget{
     );
 
     Widget exhibitButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => RightTopMap()))},
+      onPressed: () => {Navigator.push(context, PageTransition(child: RightTopMap(), type: PageTransitionType.rightToLeftWithFade))},
       color: exhibitionColor,
       child: Text('Exhibition Zone',
       style: TextStyle(
@@ -94,7 +95,7 @@ class MainMap extends StatelessWidget{
     );
 
     Widget popupButton = RaisedButton(
-      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => Popup()))},
+      onPressed: () => {Navigator.push(context, PageTransition(child: Popup(), type: PageTransitionType.rightToLeftWithFade))},
       color: popUpColor,
       child: Text('PopUp Exhibition',
       style: TextStyle(

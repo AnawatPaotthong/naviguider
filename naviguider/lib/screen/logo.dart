@@ -19,10 +19,9 @@ class Logo extends StatelessWidget {
     return MaterialApp(
       title: 'NaviGuider',
       home: Scaffold(
-        drawer: NavDrawer(),
         appBar: AppBar(
           backgroundColor: Colors.orange.shade400,
-          title: Text('NaviGuider',style: TextStyle(fontFamily: 'InriaSans', color: Colors.white)),
+          title: Text('NaviGuider', textAlign: TextAlign.center, style: TextStyle(fontFamily: 'InriaSans', color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25)),
         ),
         body: Stack(
           fit: StackFit.expand,
