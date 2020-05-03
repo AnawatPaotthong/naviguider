@@ -10,18 +10,35 @@ import 'package:naviguider/screen/Information/LxStudies.dart';
 import 'package:naviguider/screen/Information/McShowRoom.dart';
 import 'package:naviguider/screen/Information/PopUp.dart';
 
+class Mapdata{
+  static String fileName;
+}
+class MainMap extends StatefulWidget{
+  @override
+  _MainMapState createState() => _MainMapState();
+}
 
-class MainMap extends StatelessWidget{
+class _MainMapState extends State<MainMap> {
   @override
   Color oroColor = const Color.fromRGBO(204, 90, 1, 1.0);
+
   Color entColor = const Color.fromRGBO(90, 38, 40, 1.0);
+
   Color escapeColor = const Color.fromRGBO(240, 136, 47, 1.0);
+
   Color lxColor = const Color.fromRGBO(241, 83, 44, 1.0);
+
   Color mcColor = const Color.fromRGBO(244, 2, 52, 1.0);
+
   Color vendColor = const Color.fromRGBO(2, 63, 117, 1.0);
+
   Color exhibitionColor = const Color.fromRGBO(104, 139, 47, 1.0);
+
   Color popUpColor = const Color.fromRGBO(116, 82, 152, 1.0);
+
   Color researchColor = const Color.fromRGBO(255, 255, 255, 1.0);
+  
+   
 
   Widget build(BuildContext context) {
 
@@ -134,7 +151,7 @@ class MainMap extends StatelessWidget{
       aspectRatio: 2 / 1.5,
       child: ClipRect(
         child: PhotoView(
-          imageProvider: AssetImage('images/map_with_marker1.JPG'),
+          imageProvider: AssetImage('images/${Mapdata.fileName}'),
           minScale: PhotoViewComputedScale.contained * 0.8,
           maxScale: PhotoViewComputedScale.covered * 2,
           enableRotation: true,

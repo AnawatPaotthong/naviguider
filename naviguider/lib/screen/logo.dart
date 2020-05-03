@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:naviguider/screen/credits.dart';
 import 'package:page_transition/page_transition.dart';
+//import 'package:page_transition/page_transition.dart';
+import 'package:qrscan/qrscan.dart'as scanner;
 import 'designConcept.dart';
 import 'Map.dart';
 
 class Logo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    
-    Widget button(){
-    return RaisedButton(
-      onPressed: () => {Navigator.push(context, PageTransition(child: MainMap(), type: PageTransitionType.rightToLeft))},
-      textColor: Colors.deepOrange,
-      child: Text('Press this to show map'),
-    );
-  }
+    void qrScan(){
+      scanner.scan().then((String str){
+        print(str);
+        Mapdata.fileName = str;
+        Navigator.push(context, PageTransition(child: MainMap(), type: PageTransitionType.rightToLeft));
+      });
+    }
+
 
     return MaterialApp(
       title: 'NaviGuider',
@@ -46,7 +48,7 @@ class Logo extends StatelessWidget {
                   child: Image.asset('images/logo.png'),
                 ),
                 Padding(padding: EdgeInsets.only(top:10.0),),
-                button()
+                RaisedButton(onPressed: qrScan,child: Text('Where are you?'),textColor: Colors.deepOrange,)
               ],
             )
           ],
