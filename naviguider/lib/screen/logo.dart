@@ -48,8 +48,11 @@ class Logo extends StatelessWidget {
                   child: Image.asset('images/logo.png'),
                 ),
                 Padding(padding: EdgeInsets.only(top:10.0),),
-                RaisedButton(onPressed: qrScan,child: Text('Where are you?'),
-                textColor: Colors.deepOrange,splashColor: Colors.redAccent,)
+                RaisedButton(onPressed: qrScan,
+                child: Text('Where are you?'),
+                textColor: Colors.white,
+                color: Colors.redAccent,
+                splashColor: Colors.yellowAccent,)
                 
               ],
             )
