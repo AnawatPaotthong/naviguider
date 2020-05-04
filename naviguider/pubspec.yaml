@@ -54,7 +54,14 @@ flutter:
     - images/poom.jpg
     - images/GateSola.jpg
     - images/EntreShowCase.jpg
-
+    - images/QRBesignOro.JPG
+    - images/QRCB2Gate.JPG
+    - images/QRCenterOfLxMap.JPG
+    - images/QREmerialRiverGate.JPG
+    - images/QRMcShowRoomMap.JPG
+    - images/QROroGateMap.JPG
+    - images/QRPopupExhibitionGateMap.JPG
+    - images/QRVendingMachineGateMap.JPG
   fonts:
     - family: InriaSans
       fonts:
